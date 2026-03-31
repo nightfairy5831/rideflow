@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RideFlow - Precos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .pricing-hero-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .pricing-hero-buttons .btn-primary {
+      background: var(--white);
+      color: var(--primary);
+      padding: 14px 32px;
+      font-size: 15px;
+    }
+
+    .pricing-hero-buttons .btn-primary:hover {
+      box-shadow: 0 4px 16px rgba(255,255,255,0.3);
+    }
+
+    .pricing-hero-buttons .btn-outline {
+      border-color: var(--white);
+      color: var(--white);
+    }
+
+    .pricing-hero-buttons .btn-outline:hover {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .section-heading h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .section-heading p {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    .faq-section {
+      margin-bottom: 32px;
+    }
+
+    .faq-section details {
+      border-bottom: 1px solid var(--gray-100);
+    }
+
+    .faq-section details:last-child {
+      border-bottom: none;
+    }
+
+    .faq-section summary {
+      padding: 18px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--primary);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.2s ease;
+    }
+
+    .faq-section summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-section summary::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+
+    .faq-section details[open] summary::after {
+      transform: rotate(180deg);
+    }
+
+    .faq-section summary:hover {
+      background: var(--gray-50);
+    }
+
+    .faq-section details .faq-answer {
+      padding: 0 24px 18px;
+      font-size: 14px;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="#" class="logo">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="8" fill="currentColor" fill-opacity="0.1"/>
+            <path d="M8 22C8 22 9 16 12 14C15 12 21 12 24 14C27 16 28 22 28 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 22H26C26 22 26 18 24 16C22 14 14 14 12 16C10 18 10 22 10 22Z" fill="#00D4AA" opacity="0.3"/>
+            <circle cx="13" cy="23" r="2.5" stroke="currentColor" stroke-width="2" fill="none"/>
+            <circle cx="23" cy="23" r="2.5" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M15.5 23H20.5" stroke="currentColor" stroke-width="2"/>
+            <path d="M14 17H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-text">Ride<span>Flow</span></span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Principal</div>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1"/>
+            <rect x="14" y="3" width="7" height="7" rx="1"/>
+            <rect x="3" y="14" width="7" height="7" rx="1"/>
+            <rect x="14" y="14" width="7" height="7" rx="1"/>
+          </svg>
+          Dashboard
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+          </svg>
+          Solicitar Corrida
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Historico
+        </a>
+        <a href="#" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+          Precos
+        </a>
+
+        <div class="nav-section-title" style="margin-top: 12px;">Suporte</div>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+          Ajuda
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+          </svg>
+          Configuracoes
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-card">
+          <div class="user-avatar">MS</div>
+          <div class="user-info">
+            <div class="user-name">Maria Santos</div>
+            <div class="user-role">Passageira</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Pricing Hero -->
+      <section class="pricing-hero">
+        <h1>Taxa fixa de <span>R$ 0.99</span></h1>
+        <p>Transparencia total. Sem surpresas. Uma taxa unica por corrida para motoristas e passageiros.</p>
+        <div class="pricing-hero-buttons">
+          <button class="btn-primary">Comecar Agora</button>
+          <button class="btn-outline">Saiba Mais</button>
+        </div>
+      </section>
+
+      <!-- Como Funciona -->
+      <div class="section-heading">
+        <h2>Como Funciona</h2>
+        <p>Entenda cada componente da sua tarifa</p>
+      </div>
+
+      <div class="stats-grid">
+        <!-- Tarifa Base -->
+        <div class="stat-card">
+          <div class="stat-card-header">
+            <div class="stat-icon green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="stat-value">Tarifa Base</div>
+          <div class="stat-label">Calculada pela distancia e tempo da corrida</div>
+        </div>
+
+        <!-- Taxa por Distancia -->
+        <div class="stat-card">
+          <div class="stat-card-header">
+            <div class="stat-icon blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+          </div>
+          <div class="stat-value">R$ 1.20/km</div>
+          <div class="stat-label">R$ 1.20 por km percorrido</div>
+        </div>
+
+        <!-- Taxa por Tempo -->
+        <div class="stat-card">
+          <div class="stat-card-header">
+            <div class="stat-icon orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+          </div>
+          <div class="stat-value">R$ 0.30/min</div>
+          <div class="stat-label">R$ 0.30 por minuto de corrida</div>
+        </div>
+
+        <!-- Taxa da Plataforma -->
+        <div class="stat-card">
+          <div class="stat-card-header">
+            <div class="stat-icon purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+          </div>
+          <div class="stat-value">R$ 0.99</div>
+          <div class="stat-label">R$ 0.99 fixo por corrida (motorista + passageiro)</div>
+        </div>
+      </div>
+
+      <!-- Pricing Cards -->
+      <div class="pricing-cards">
+
+        <!-- Para Passageiros -->
+        <div class="pricing-card">
+          <div class="pricing-card-icon passenger">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="pricing-card-title">Para Passageiros</div>
+          <div class="pricing-card-subtitle">Tudo incluso para sua viagem</div>
+          <div class="pricing-amount">R$ 0.99 <span>/por corrida</span></div>
+          <ul class="pricing-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Corridas ilimitadas
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Rastreamento em tempo real
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Motoristas verificados
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Suporte 24/7
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Avaliacao de motoristas
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Historico completo
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Multiplas formas de pagamento
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Cancelamento gratuito (ate 2 min)
+            </li>
+          </ul>
+          <button class="btn-primary w-full">Criar Conta</button>
+        </div>
+
+        <!-- Para Motoristas -->
+        <div class="pricing-card featured">
+          <div class="pricing-card-icon driver">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 17h14M5 17a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1l2-3h8l2 3h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2"/>
+              <circle cx="7.5" cy="17" r="2.5"/>
+              <circle cx="16.5" cy="17" r="2.5"/>
+              <path d="M10 17h4"/>
+            </svg>
+          </div>
+          <div class="pricing-card-title">Para Motoristas</div>
+          <div class="pricing-card-subtitle">Maximize seus ganhos</div>
+          <div class="pricing-amount">R$ 0.99 <span>/por corrida</span></div>
+          <ul class="pricing-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Ganhos por corrida
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Escolha sua area de atuacao
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Repasses instantaneos
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              100% das gorjetas
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Seguro incluso
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Suporte dedicado
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Painel de ganhos
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Flexibilidade total de horario
+            </li>
+          </ul>
+          <button class="btn-secondary w-full">Ser Motorista</button>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="card faq-section">
+        <div class="card-header">
+          <div class="card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+            Perguntas Frequentes
+          </div>
+        </div>
+
+        <details>
+          <summary>Como e calculada a tarifa?</summary>
+          <div class="faq-answer">
+            A tarifa de cada corrida e composta por quatro elementos: a tarifa base (valor minimo para iniciar a corrida), a taxa por distancia (R$ 1.20 por quilometro percorrido), a taxa por tempo (R$ 0.30 por minuto de duracao da corrida) e a taxa fixa da plataforma de R$ 0.99. Essa estrutura garante que voce sempre saiba exatamente como o valor final e calculado.
+          </div>
+        </details>
+
+        <details>
+          <summary>A taxa de R$ 0.99 e cobrada de quem?</summary>
+          <div class="faq-answer">
+            A taxa de R$ 0.99 e cobrada tanto do motorista quanto do passageiro, totalizando R$ 1.98 por corrida para a plataforma. Esse valor e fixo e independe da distancia ou duracao da viagem, garantindo transparencia e previsibilidade para ambas as partes.
+          </div>
+        </details>
+
+        <details>
+          <summary>Existem tarifas dinamicas?</summary>
+          <div class="faq-answer">
+            Nao. O RideFlow nao pratica tarifas dinamicas (surge pricing). Nossa politica de precos e 100% transparente e previsivel. Voce nunca pagara mais por estar em horario de pico ou em dias de alta demanda. O preco que voce ve no inicio da corrida e exatamente o que sera cobrado ao final.
+          </div>
+        </details>
+
+        <details>
+          <summary>Como recebo meus ganhos como motorista?</summary>
+          <div class="faq-answer">
+            Os repasses para motoristas sao feitos de forma instantanea apos a conclusao de cada corrida. O valor e depositado diretamente na sua conta cadastrada. Alem disso, voce recebe um resumo semanal detalhado com todas as corridas realizadas, ganhos totais, gorjetas recebidas e a taxa da plataforma descontada, tudo acessivel pelo painel do motorista.
+          </div>
+        </details>
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>

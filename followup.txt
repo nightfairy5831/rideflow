@@ -1,0 +1,12 @@
+Message 1 (after sending proposal + images):
+
+Compartilhei algumas imagens que mostram como o app de transporte vai ficar visualmente, tanto a tela do passageiro quanto a do motorista, incluindo o mapa de acompanhamento em tempo real. Assim voce consegue ter uma ideia clara de como cada parte vai funcionar na pratica antes de comecar o desenvolvimento.
+
+Tambem preparei um plano de desenvolvimento dividido em 3 marcos de entrega ao longo de 3 semanas.
+Da uma olhada e me diz o que acha.
+
+---
+
+Message 2 (follow-up to check if client saw):
+
+Conseguiu dar uma olhada nas imagens e no plano que enviei? Fico no aguardo do seu retorno para alinharmos os proximos passos.
